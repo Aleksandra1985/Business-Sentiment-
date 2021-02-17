@@ -1,7 +1,9 @@
 # Business-Sentiment
 We suggest a specific approach of Business Sentiment as an instrument for measuring the emotional component of an IT ticket. This latent information is extracted from the unstructured IT ticket texts with the help of a lexicon-based approach. As standard lexicons do not work well in our context of IT ticket classification, using the state-of-the-art VADER and LDA, we developed a domain specific lexicon. Each of the words is associated with positive, negative or neutral sentiment. In particular, words with valence score greater than 0 are considered to be positive, whereas words with valence score less than 0 are considered to be negative. All other words are considered to have neutral sentiment. For each IT ticket text, we determine the proportion of words with negative, neutral and positive sentiment together with intensifiers (exclamation marks, capitalizations, special characters, date and time).
 
+This repository contains the following files: Business Sentiment (BS) Lexicon, python file for extracting BS (as an input for python file serve ticket textual descriptions and BS Lexicon), excel file with the BS calculation based on the motivating example, threshold rules, and illustrative BS Lexicon (as an input for excel file serve threshold rules).
 
+Below, we describe the main stages of Step 3. Importance Aspect Extraction.
 
 # STAGE 1. BS lexicon Reading and Stemming
 # STAGE 2. Tasks Corpus (2.1.) Reading, Special Preprocessing
